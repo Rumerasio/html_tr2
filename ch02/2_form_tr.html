@@ -7,17 +7,27 @@
 	
 	<style type="text/css">
 		table,th,td{
-		border:1px solid black;
-		border-collapse: collapse;
+			border:1px solid black;
+			border-collapse: collapse;
 		}
 		
 		th,td{
 			padding:20px;
 		}
-	</style>
-	<style>
-	.tag{background-color:gray;color:white;text-align:center;font-weight:bold;font-size:15px;}
-	.guide{color:brown;font-size:14px;font-weight:bold;}
+		
+		.tag{
+			background-color:#C1EDF5;
+			text-align:center;
+			font-weight:bold;
+			font-size:15px;
+		}
+		
+		.guide{
+			color:brown;
+			font-size:14px;
+			font-weight:bold;
+		}
+		
 		table{
 			margin:0;
 			width:900px;
@@ -26,10 +36,8 @@
 </head>
 
 <body>
-	<h1>
-		&nbsp;회원 가입
-	</h1>
-
+	<h1 style="text-align:left;">&nbsp;회원 가입</h1>
+	<span style="text-align:right;">표시 항목은 필수 입력 항목입니다.</span>
 	
 	<form action="./result.html" id="form">
 		<h5 style="text-align:left">기본정보</h5>
@@ -96,7 +104,6 @@
 					<br>
 					일반전화
 					<select name="landline_front" id="landline_front" style="width:50px">
-					
 						<option>선택</option>
 						<option>02</option>
 						<option>031</option>
@@ -172,7 +179,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="tag">작가정보공개설정</td>
+				<td class="tag">작가정보 공개설정</td>
 				<td>
 					<input type="radio" name="writer_info" value="1">공개
 					<input type="radio" name="writer_info" value="2">비공개
@@ -235,7 +242,9 @@
 				</td>
 			</tr>
 		</table>
-		<br><input type="button" id=btnSave value="저장" onclick="here();">
+		
+		<br><input type="button" id=btnSave value="가입" onclick="here();"style="width:200px;height:50px;display:block;margin:auto;background-color:#EBDEF0;">
+		<!-- <input type="button" id=btnleave value="취소" style="width:200px;height:50px;background-color:#EBDEF0;"> -->
 		
 	</form>
 
@@ -244,6 +253,9 @@
 			alert("전송되었습니다")
 			document.getElementById("form").submit();
 		}
+		/* function Initialize() {
+			
+		} */
 	</script>
 
 
