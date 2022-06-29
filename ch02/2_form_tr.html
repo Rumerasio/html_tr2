@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
+	<title>스토리움UM</title>
+	
+	<style type="text/css">
+		table,th,td{
+		border:1px solid black;
+		border-collapse: collapse;
+		}
+		
+		th,td{
+			padding:20px;
+		}
+	</style>
+	<style>
+	.tag{background-color:gray;color:white;text-align:center;font-weight:bold;font-size:15px;}
+	.guide{color:brown;font-size:14px;font-weight:bold;}
+		table{
+			margin:0;
+			width:900px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		&nbsp;회원 가입
+	</h1>
+
+	
+	<form action="./result.html" id="form">
+		<h5 style="text-align:left">기본정보</h5>
+		<table>
+			<tr>
+				<td class="tag" width="160px">이름</td>
+				<td width="800px"><input stype="text" name="name" id="name" size="12"></td>
+			</tr>
+			<tr>
+				<td class="tag">아이디</td>
+				<td>
+					<input type="text" name="id" id="id" autocomplete="off" size="12">
+					<input type="button" name="idcheck" value="아이디중복확인"><br>
+					<span class="guide">6~16자까지 영문자(소문자),숫자 사용 가능합니다.</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">비밀번호</td>
+				<td>
+					<input type="password" name="password" id="password" size="12"><br>
+					<span class="guide">6~16자까지 영문자(대소문자),숫자 및 특수문자 사용 가능합니다.</span><br>
+					<span class="guide">3자리 연속 또는 같은 문자, 아이디는 사용할 수 없습니다.</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">비밀번호 확인</td>
+				<td><input type="password" name="passwordcheck" id="passwordcheck" size="12"></td>
+			</tr>
+			<tr>
+				<td class="tag">생년월일/성별</td>
+				<td>
+					<input type="text" name="birth" id="birth" placeholder="YYYY.MM.DD" size="8">
+					<input type="radio" name="gender" id="gender">남자
+					<input type="radio" name="gender" id="gender">여자
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">이메일</td>
+				<td>
+					<input type="text" name="email_front" id="email_front" size="12">@
+					<input type="text" name="email_back" id="email_back" size="12">
+					<select name="email_platform" id="email_platform">
+						<option>메일주소선택</option>
+						<option>naver.com</option>	
+						<option>gmail.com</option>	
+						<option>daum.net</option>	
+					</select>
+					<input type="button" value="인증코드 발송" name="send_code" id="send_code"><br>
+					<input type="text" name="code" id="code" size="12">
+					<input type="button" value="인증확인" name="code_check" id="code_check">
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">연락처</td>
+				<td>
+					휴대전화
+					<select name="cellphone_front" id="cellphone_front" style="width:50px">
+						<option>010</option>
+						<option>011</option>
+					</select>
+					-
+					<input type=text name="cellphone_middle" id="cellphone_middle" size="2">-
+					<input type=text name="cellphone_back" id="cellphone_back" size="2">
+					<br>
+					일반전화
+					<select name="landline_front" id="landline_front" style="width:50px">
+					
+						<option>선택</option>
+						<option>02</option>
+						<option>031</option>
+						<option>032</option>
+					</select>
+					-
+					<input type=text name="landline_middle" id="landline_middle" size="2">-
+					<input type=text name="landline_back" id="landline_back" size="2">
+					<br>
+					<span class="guide">연락처는 둘 중 하나만 입력해도 됩니다.</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">우편번호</td>
+				<td>
+					<input type="text" name="adress_number" id="adress_number" size="12">
+					<input type="button" value="주소검색" name="adress_number_search" id ="adress_number_search">				
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">주소</td>
+				<td>
+					<input type="text" name="adress" id="adress" readonly style="width:100%;"><br>
+					<input type="text" name="adress_detail" id="adress_detail" placeholder="상세주소" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">정보수신 여부</td>
+				<td>
+					서비스 및 이벤트 소식을
+					<input type="radio" name="inform_agreement" id="inform_agreement" value="1">Email로 수신하겠습니다.
+					<input type="radio" name="inform_agreement" id="inform_agreement" value="2">SMS로 수신하겠습니다.
+				</td>
+			</tr>
+		</table>
+		
+		<h5>작가정보</h5>
+		<table>
+			<tr>
+				<td class="tag" width="160px">프로필이미지</td>
+				<td width="800px">
+					<input type="button" value="파일 선택" name="profile_image" id="profile_image">
+					선택된 파일 없음
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">필명</td>
+				<td>
+					<input type="text" name="writer_nick" id="writer_nick" size="12"><br>
+					<span class="guide">필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름입니다.)</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">대표작</td>
+				<td><input type="text" name="majorwork" id="majorwork" style="width:100%;"></td>
+			</tr>
+			<tr>
+				<td class="tag">수상내역</td>
+				<td>
+					<textarea rows="10" cols="100%"></textarea><br>
+					<span class="guide">여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">주요작품</td>
+				<td>
+					<input type="text" name="story_title" id="story_title" placeholder="스토리 제목을 입력하세요" style="width:40%;">
+					<input type="text" name="story_act" id="story_act" placeholder="해당 스토리의 역할을 입력하세요" style="width:40%;">
+					<input type="button" value="삭제" name="delete" id="delete"><br>
+					<input type="button" value="+추가" name="" id=""><br>
+					<span class="guide">본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.<br>
+					(역할은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">작가정보공개설정</td>
+				<td>
+					<input type="radio" name="writer_info" value="1">공개
+					<input type="radio" name="writer_info" value="2">비공개
+				</td>
+			</tr>
+		</table>
+		
+		<h5>이용자정보</h5>
+		<table style="font-size:12px;font-weight:bold;">
+			<tr>
+				<td class="tag" width="160px">소속(회사)</td>
+				<td width="800px"><input type="text" name="" id="" size="12"></td>
+			</tr>
+			<tr>
+				<td class="tag">사업자등록번호</td>
+				<td>
+					<input type="text" name="" id="" size=5>-
+					<input type="text" name="" id="" size=3>-
+					<input type="text" name="" id="" size=7>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">사압자등록증(첨부)</td>
+				<td>
+					<input type="button" value="파일 선택"name="b_license_file" id="b_license_file">
+					선택된 파일 없음<br>
+					<span class="guide">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/PDF파일 업로드 불가)</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">분야</td>
+				<td>
+					<input type="radio" name="field">영화
+					<input type="radio" name="field">방송
+					<input type="radio" name="field">출판
+					<input type="radio" name="field">공연/예술
+					<input type="radio" name="field">투자/배급
+					<input type="radio" name="field">캐릭터/애니메이션
+					<input type="radio" name="field">기타	<input type="text" name="field_c" id="field_c" size="10">			
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">직종</td>
+				<td>
+					<input type="radio" name="job">영화
+					<input type="radio" name="job">방송
+					<input type="radio" name="job">출판
+					<input type="radio" name="job">기타 <input type="text" name="job_content" id="job_content" size="10">			
+				</td>
+			</tr>
+			<tr>
+				<td class="tag">주요경력</td>
+				<td>
+					주요경력사항을 등록해 주시기 바랍니다.<br>
+					<span class="guide">(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)</span><br>
+					<input type="text" name="" id="">
+					<input type="text" name="" id="">
+					<input type="button" value="삭제" name="" id="">
+					<input type="button" value="+추가" name="" id="">
+				</td>
+			</tr>
+		</table>
+		<br><input type="button" id=btnSave value="저장" onclick="here();">
+		
+	</form>
+
+	<script type="text/javascript">
+		function here() {
+			alert("전송되었습니다")
+			document.getElementById("form").submit();
+		}
+	</script>
+
+
+</body>
+</html>
