@@ -1,0 +1,14 @@
+table {
+	border:solid;
+	border-width:2px;
+	border-collapse: collapse;
+	width:900px;
+}
+th, td{
+	border:solid;
+	border-width:1px;
+}
+th{
+	background-color:hsl(355, 64%, 80%);
+	
+}

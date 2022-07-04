@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
+	<title>관리자화면</title>
+	
+	<link href="./css/tableD.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	<h1>회원목록</h1>
+	<hr>
+	<h4>
+		<input type="text" name="searchcontent" placeholder="이름검색">
+		<input type="button" name="search" value="검색">
+	</h4>
+	
+	
+	<form>
+		<table>
+			<tr>
+				<th>선택</th>
+				<th>지원번호</th>
+				<th>이름</th>
+				<th>지원분야</th>
+				<th>경력구분</th>
+				<th>나이</th>
+				<th>전화번호</th>
+				<th>비상연락망</th>
+				<th>주소</th>
+				<th>결과</th>
+				<th>입사지원서삭제여부</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="select"></td>
+				<td id="test"></td>
+				<td>김나노</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>배산수</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>	
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>골리앗</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>요한슨</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>박현미</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+	<input type="button" name=new value="지원하기" onclick=apply();>
+	<input type="button" name=delete value="삭제" onclick="erase();">
+	
+	</form>
+	
+	<script type="text/javascript">
+		function apply() {
+			location.href="./recruitRegForm.html"
+		}
+		function erase() {
+			alert("정말 삭제하시겠습니까?")
+		}
+	</script>
+	
+</body>
+</html>
