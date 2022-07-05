@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');/* Nanum Pen Script */
+
+body{
+	background-color: #80808025;
+}
+h1{
+	font-family:'Nanum Pen Script';
+	font-size:50pt;
+}
+th{
+	background-color:hsl(355, 64%, 80%);
+}
+.TopInput{
+	/* border:none; */ /*테두리 숨기기*/
+	text-align: center;
+}
+.BasicInput{
+	/* border:none; */
+	height: 21px;
+}
+.EduTrainInput{
+	/* border:none; */
+	height: 21px;
+}
+.LicenseInput{
+	/* border:none; */
+	height: 21px;
+}
+.CareerInput{
+	/* border:none; */
+	height: 21px;
+}

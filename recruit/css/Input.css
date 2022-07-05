@@ -1,19 +1,22 @@
 .TopInput{
-	border:none;
+	height:43px;	
 }
 .BasicInput{
-	border:none;
+	/* border:none; */ /*테두리 숨기기*/
+	width:95%;
+}
+.AcademicInput{
 	width:95%;
 }
 .EduTrainInput{
-	border:none;
+	/* border:none; */
 	width:95%;
 }
 .LicenseInput{
-	border:none;
+	/* border:none; */
 	width:95%;
 }
 .CareerInput{
-	border:none;
+	/* border:none; */
 	width:95%;
 }

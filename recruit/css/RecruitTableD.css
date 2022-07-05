@@ -9,6 +9,9 @@ th, td{
 	border-width:1px;
 }
 th{
-	background-color:hsl(355, 64%, 80%);
-	
+	background-color:#f5f5dc;
+}
+#IDPhoto{
+	color: red;
+	text-align: center;
 }
