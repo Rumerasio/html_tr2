@@ -5,6 +5,9 @@
 	/* border:none; */ /*테두리 숨기기*/
 	width:95%;
 }
+.CpInput{
+	width:3em;
+}
 .AcademicInput{
 	width:95%;
 }

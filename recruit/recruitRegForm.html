@@ -16,9 +16,11 @@
 <body>
 	<h1>입사지원서 작성</h1>
 	
+	<button id="refresh">초기화</button>
+	
 	<form action="./recruitForm.html" id="form">
 		<table>
-			<th width="130px">지원분야</th>
+			<th width="130px" id="ApplyField">지원분야</th>
 			<td><input type="text" class="TopInput"></td>
 			<th width="130px">경력구분<br>(신입/경력)</th>
 			<td><input type="text" class="TopInput"></td>
@@ -43,10 +45,10 @@
 						<ul class="image-preview"></ul>
 					</div>
 				</td>
-				<th>성명</th>
-				<td><input class="BasicInput"></td>
-				<th>한문</th>
-				<td><input class="BasicInput"></td>
+				<th width="130px">성명</th>
+				<td><input></td>
+				<th width="130px">한문</th>
+				<td><input></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
@@ -58,8 +60,14 @@
 			<tr>
 				<!-- <td></td> -->
 				<th>전화번호</th>
-				<td>
-					<input class="BasicInput">					
+				<td id="CpFront">
+					<select>
+						<option value="02">02</option>
+						<option value="010">010</option>
+						<option value="011">011</option>
+					</select>-
+					<input type="text" class="CpInput">-
+					<input type="text" class="CpInput">				
 				</td>
 				<th>비상연락망</th>
 				<td>
@@ -211,6 +219,12 @@
 				location.href="./recruitView.html";
 			}
 			else{}		
+		}
+		
+		var reBtn = document.getElementById("refresh");
+		reBtn.addEventListener("click",erase)
+		function erase() {
+			document.getElementById("ApplyField").innerHTML ="";
 		}
 		/* function getImageFiles(e) {
 			const uploadFiles = [];
