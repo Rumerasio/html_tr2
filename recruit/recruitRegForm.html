@@ -44,9 +44,9 @@
 					</div>
 				</td>
 				<th>성명</th>
-				<td><input  class="BasicInput"></td>
+				<td><input class="BasicInput"></td>
 				<th>한문</th>
-				<td><input  class="BasicInput"></td>
+				<td><input class="BasicInput"></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
@@ -58,9 +58,13 @@
 			<tr>
 				<!-- <td></td> -->
 				<th>전화번호</th>
-				<td><input  class="BasicInput"></td>
+				<td>
+					<input class="BasicInput">					
+				</td>
 				<th>비상연락망</th>
-				<td><input  class="BasicInput"></td>
+				<td>
+					<input  class="BasicInput">
+				</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
@@ -190,7 +194,7 @@
 			</tr>	
 		</table>
 		<br><input type="button" value="뒤로가기" onclick="back()">
-		<input type="button" value="임시저장" onclick="save()">
+		<input type="button" value="작성하기" onclick="save()">
 	</form>	
 	
 	<script type="text/javascript">
@@ -202,7 +206,7 @@
 			else{}
 		}
 		function save() {
-			var result = confirm("저장하시겠습니까?")
+			var result = confirm("작성하시겠습니까?")
 			if(result) {
 				location.href="./recruitView.html";
 			}
