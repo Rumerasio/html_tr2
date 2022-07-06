@@ -81,7 +81,7 @@
 			<tr>
 				<td><input type="checkbox" name="DataChoose4" id="DataChoose4"></td>
 				<td></td>
-				<td>요한슨</td>
+				<td>베토벤</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -106,7 +106,7 @@
 			</tr>
 		</table>
 		
-	<input type="button" name=new value="지원하기" onclick="apply();">
+	<input type="button" name=new id=newBtn value="작성하러가기" onclick="apply();">
 	<input type="button" name=delete value="삭제" onclick="erase();">
 	
 	</form>
@@ -116,7 +116,10 @@
 			location.href="./recruitRegForm.html"
 		}
 		function erase() {
-			alert("정말 삭제하시겠습니까?")
+			var result = confirm("정말 삭제하시겠습니까?")
+			if(result){
+				alert("삭제되었습니다.")
+			}
 		}
 		/* var CheckAll = document.getElementById("DataChooseAll");
 		CheckAll.addEventListener("change",CheckOn);

@@ -46,13 +46,29 @@
 			<tr>
 				<!-- <td></td> -->
 				<th>전화번호</th>
-				<td><input  class="BasicInput" value="010-1115-9855"></td>
+				<td id="CpFront">
+					<select>
+						<option value="02">02</option>
+						<option value="010" selected="selected">010</option>
+						<option value="011">011</option>
+					</select>-
+					<input type="text" class="CpInput" value="1115">-
+					<input type="text" class="CpInput" value="9855">				
+				</td>
 				<th>비상연락망</th>
-				<td><input  class="BasicInput" value="010-2300-9877"></td>
+				<td id="EmFront">
+					<select>
+						<option value="02">02</option>
+						<option value="010" selected="selected">010</option>
+						<option value="011">011</option>
+					</select>-
+					<input type="text" class="EmInput" value="2300">-
+					<input type="text" class="EmInput" value="9877">				
+				</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
-				<th>전자우편</th>
+				<th>이메일</th>
 				<td><input  class="BasicInput" value="knano0120@naver.com"></td>
 				<th>나이</th>
 				<td><input  class="BasicInput" value="28"></td>

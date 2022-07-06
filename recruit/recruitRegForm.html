@@ -14,14 +14,13 @@
 </head>
 
 <body>
-	<h1>입사지원서 작성</h1>
-	
-	<button id="refresh">초기화</button>
+	<h1>입사지원서</h1>
 	
 	<form action="./recruitForm.html" id="form">
+		<button type="reset" id="refresh" style="position: relative; left: 844px; bottom: 2px;">초기화</button>
 		<table>
-			<th width="130px" id="ApplyField">지원분야</th>
-			<td><input type="text" class="TopInput"></td>
+			<th width="130px">지원분야</th>
+			<td><input type="text" class="TopInput" id="ApplyField"></td>
 			<th width="130px">경력구분<br>(신입/경력)</th>
 			<td><input type="text" class="TopInput"></td>
 			<th width="130px">희망연봉</th>
@@ -35,9 +34,9 @@
 					<div> 
 						<p>
 							<i>
-								정장차림의 증명사진<br>
-								넣으시면<br> 
-								됩니다.<br>
+								정장차림의 증명사진<br> 
+								넣으시면<br>
+								됩니다.
 							</i>
 						</p>
 						<input type="file" class="real-upload" accept="image/*" required multiple>
@@ -53,9 +52,9 @@
 			<tr>
 				<!-- <td></td> -->
 				<th>영문</th>
-				<td><input  class="BasicInput"></td>
+				<td><input class="BasicInput"></td>
 				<th>생년월일</th>
-				<td><input  class="BasicInput"></td>
+				<td><input type="date" class="BasicInput"></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
@@ -63,23 +62,29 @@
 				<td id="CpFront">
 					<select>
 						<option value="02">02</option>
-						<option value="010">010</option>
+						<option value="010" selected="selected">010</option>
 						<option value="011">011</option>
 					</select>-
 					<input type="text" class="CpInput">-
 					<input type="text" class="CpInput">				
 				</td>
 				<th>비상연락망</th>
-				<td>
-					<input  class="BasicInput">
+				<td id="EmFront">
+					<select>
+						<option value="02">02</option>
+						<option value="010" selected="selected">010</option>
+						<option value="011">011</option>
+					</select>-
+					<input type="text" class="EmInput">-
+					<input type="text" class="EmInput">				
 				</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
-				<th>전자우편</th>
-				<td><input  class="BasicInput"></td>
+				<th>이메일</th>
+				<td><input class="BasicInput"></td>
 				<th>나이</th>
-				<td><input  class="BasicInput"></td>
+				<td><input class="BasicInput"></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
