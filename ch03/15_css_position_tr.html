@@ -6,13 +6,24 @@
 	<title>Position_tr</title>
 	
 	<link href="../recruit/css/tableD.css" rel="stylesheet" type="text/css">
+	<link href="../recruit/css/Button.css" rel="stylesheet" type="text/css">
 	
 	<style type="text/css">
+		#wrap{
+			
+			width:100%;
+		}
+		li{
+			display: inline-block;
+			width: 150px;
+			padding-right:30px;
+			padding-top:10px;
+		}
 		#GNB{
-		
-			background-color:#6FE8E7;
+			width:2000px; /* 창을 줄여도 컨텐츠가 파괴 되지 않게*/ 
 		}
 		#Category{
+			width:170px;
 			background-color:#edacb1;
 			float: left;
 			padding-right: 10px;
@@ -49,138 +60,172 @@
 		td{
 			text-align: center;
 		}
+		/* sign_a 라는 a 링크  밑줄 없애고, 방문하지 않았을때, 방문했을대, 마우스를 올려두었을때, 클릭하고 땔때까지
+		모두 흰색으로 냅두기 위한 style */
+		
+		#sign_a:link {
+			color:white;
+		}
+		 #sign_a:visited{
+		 	color:white;
+		 }
+		 #sign_a, #sign_a:hover{
+			text-decoration: none;
+			color: white;
+		}
 	</style>
 </head>
 
 <body>
-	<h1>해더</h1>
-	<div id="GNB">
-		<table>
-			<tr>
-				<td>쇼킹딜</td>
-				<td>베스트</td>
-				<td>쿠폰/기획전</td>
-				<td>장보기</td>
-				<td>T공식대리점</td>
-				<td>아마존</td>
-			</tr>
-		</table>
-	</div>
-	<div id="Category">
-		<ul>
-			<li>회원 관리</li>
-			<li>사이트 관리</li>
-			<li>시스템 관리</li>
-			<li>커뮤니케이션 관리</li>
-			<li>탬플릿 관리</li>
-			<li>로그 관리</li>
-			<li>통계</li>
-		</ul>
-	</div>
-	<div id="BonusZone" >
-		<h2>이거봐</h2>
-		<img alt="" src="../../image/leaves-3744649_1920.jpg" width="200px">
-		<h2>꼭봐</h2>
-	</div>
-	<div id="Menu">
-		<h4>
-			<select name="searchTag">
-				<option value="1">이름</option>
-				<option value="2">지원분야</option>
-				<option value="3">경력구분</option>
-			</select>
-			<input type="text" name="searchName" placeholder="검색어" style="height: 23px;">
-			<input type="button" id="search" value="조회">
-		</h4>
-		
-		
-		<form>
-			<table>
-				<tr>
-					<th>선택<br><input type="checkbox" name="DataChooseAll" id="DataChooseAll"></th>
-					<th>지원번호</th>
-					<th>이름</th>
-					<th>지원분야</th>
-					<th>경력구분</th>
-					<th>나이</th>
-					<th>전화번호</th>
-					<th>비상연락망</th>
-					<th>주소</th>
-					<th>결과</th>
-					<th>입사지원서삭제여부</th>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="DataChoose1" id="DataChoose1"></td>
-					<td id="test">85556215</td>
-					<td><a href="./recruitView.html">김나노</td>
-					<td>회계</td>
-					<td>신입</td>
-					<td>26</td>
-					<td>010 9800 1260</td>
-					<td>010 3245 5600</td>
-					<td><div class ="AdressD">서울특별시 서초구 방배동 830-29</div></td>
-					<td>합격</td>
-					<td>N</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="DataChoose2" id="DataChoose2"></td>
-					<td></td>
-					<td>배산수</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>	
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="DataChoose3" id="DataChoose3"></td>
-					<td></td>
-					<td>골리앗</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="DataChoose4" id="DataChoose4"></td>
-					<td></td>
-					<td>베토벤</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="DataChoose5" id="DataChoose5"></td>
-					<td></td>
-					<td>박현미</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
+	<div id="wrap">
+		<h1><div style="display: inline-block;" id="sign"><a href="./15_css_position_tr.html" id=sign_a>EZEN</a></div></h1>
+		<div id="GNB">
+			<ul>
+				<li>쇼킹딜</li>
+				<li>베스트</li>
+				<li>쿠폰/기획전</li>
+				<li>장보기</li>
+				<li>T공식대리점</li>
+				<li>아마존</li>
+			</ul>
+		</div>
+		<div id="Category">
+			<ul>
+				<li>회원 관리</li>
+				<li>사이트 관리</li>
+				<li>시스템 관리</li>
+				<li>커뮤니케이션 관리</li>
+				<li>탬플릿 관리</li>
+				<li>로그 관리</li>
+				<li>통계</li>
+			</ul>
+		</div>
+		<div id="BonusZone" >
+			<h2>이거봐</h2>
+			<img alt="" src="../../image/leaves-3744649_1920.jpg" width="200px">
+			<h2>꼭봐</h2>
+		</div>
+		<div id="Menu">
+			<h4>
+				<select name="searchTag">
+					<option value="1">이름</option>
+					<option value="2">지원분야</option>
+					<option value="3">경력구분</option>
+				</select>
+				<input type="text" name="searchName" placeholder="검색어" style="height: 23px;">
+				<input type="button" id="search" value="조회">
+			</h4>
 			
-		<input type="button" name=new id=newBtn value="작성하러가기" onclick="apply();">
-		<input type="button" name=delete value="삭제" onclick="erase();">
-		
-		</form>
+			
+			<form>
+				<table>
+					<tr>
+						<th><input type="checkbox" name="DataChooseAll" id="DataChooseAll"></th>
+						<th>지원번호</th>
+						<th>이름</th>
+						<th>지원분야</th>
+						<th>경력구분</th>
+						<th>나이</th>
+						<th>전화번호</th>
+						<th>비상연락망</th>
+						<th>주소</th>
+						<th>결과</th>
+						<th>입사지원서삭제여부</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose1" id="DataChoose1"></td>
+						<td id="test">85556215</td>
+						<td><a href="./recruitView.html">김나노</td>
+						<td>회계</td>
+						<td>신입</td>
+						<td>26</td>
+						<td>010 9800 1260</td>
+						<td>010 3245 5600</td>
+						<td><div class ="AdressD">서울특별시 서초구 방배동 830-29</div></td>
+						<td>합격</td>
+						<td>N</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose2" id="DataChoose2"></td>
+						<td></td>
+						<td>배산수</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>	
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose3" id="DataChoose3"></td>
+						<td></td>
+						<td>골리앗</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose4" id="DataChoose4"></td>
+						<td></td>
+						<td>베토벤</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose5" id="DataChoose5"></td>
+						<td></td>
+						<td>박현미</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				
+			<input type="button" name=new id=newBtn value="작성하러가기" onclick="apply();">
+			<input type="button" name=delete value="삭제" onclick="erase();">
+			
+			</form>
+		</div>
+		<div id="End"><h6>Copy right. 1439-Joseph Han</h6></div>
 	</div>
-	<div id="End"><h6>Copy right. 1439-Joseph Han</h6></div>
+	
+	<script type="text/javascript">
+		function apply() {
+			location.href="../recruit/recruitRegForm.html"
+		}
+		function erase() {
+			var result = confirm("정말 삭제하시겠습니까?")
+			if(result){
+				alert("삭제되었습니다.")
+			}
+		}
+		/* var CheckAll = document.getElementById("DataChooseAll");
+		CheckAll.addEventListener("change",CheckOn);
+		function CheckOn() {
+			document.getElementById("DataChoose1").value=on;
+			document.getElementById("DataChoose2").value=on;
+			document.getElementById("DataChoose3").value=on;
+			document.getElementById("DataChoose4").value=on;
+			document.getElementById("DataChoose5").value=on;
+		} */
+	</script>
 </body>
 </html>
