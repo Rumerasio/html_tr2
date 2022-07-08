@@ -7,29 +7,28 @@
 	
 	<link href="../recruit/css/tableD.css" rel="stylesheet" type="text/css">
 	<link href="../recruit/css/Button.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	
 	<style type="text/css">
 		#wrap{
-			
 			width:100%;
 		}
 		li{
 			display: inline-block;
-			width: 150px;
-			padding-right:30px;
+			width: 170px;
 			padding-top:10px;
 		}
 		#Category ul:nth-child(2) li:nth-child(4) {
-			background-color: blue;
+			background-color:#dc143c30;
 		}
 		#GNB{
 			width:2000px; /* 창을 줄여도 컨텐츠가 파괴 되지 않게*/ 
 		}
 		#Category{
-			width:170px;
+			width:200px;
 			background-color:#edacb1;
+			padding-right:30px;
 			float: left;
-			padding-right: 10px;
 		}
 		#BonusZone{
 			float:right;
@@ -82,6 +81,14 @@
 <body>
 	<div id="wrap">
 		<h1><div style="display: inline-block;" id="sign"><a href="./15_css_position_tr.html" id=sign_a>EZEN</a></div></h1>
+		<nav class="navbar bg-light">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">
+		      <img src="../../image/ezen_logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+		      EZEN       
+		    </a>
+		  </div>
+		</nav>
 		<div id="GNB">
 			<ul>
 				<li>쇼킹딜</li>
@@ -119,13 +126,23 @@
 		</div>
 		<div id="Menu">
 			<h4>
+				<!-- 
 				<select name="searchTag">
 					<option value="1">이름</option>
 					<option value="2">지원분야</option>
 					<option value="3">경력구분</option>
 				</select>
 				<input type="text" name="searchName" placeholder="검색어" style="height: 23px;">
-				<input type="button" id="search" value="조회">
+				<input type="button" id="search" value="조회"> 
+				--> 
+				<nav class="navbar navbar-expand-lg bg-light" >
+					<div class="container-fluid">
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="검색어" aria-label="Search" style="width:200px">
+							<button class="btn btn-outline-success" type="submit">조회</button>
+						</form>
+					</div>
+				</nav>
 			</h4>
 			
 			
@@ -211,8 +228,8 @@
 					</tr>
 				</table>
 				
-			<input type="button" name=new id=newBtn value="작성하러가기" onclick="apply();">
-			<input type="button" name=delete value="삭제" onclick="erase();">
+			<button type="button" class="btn btn-primary" name="new" onclick="apply();">작성하러가기</button>
+			<button type="button" class="btn btn-danger" name="delete" onclick="erase();">삭제</button>
 			
 			</form>
 		</div>
@@ -239,5 +256,6 @@
 			document.getElementById("DataChoose5").value=on;
 		} */
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
