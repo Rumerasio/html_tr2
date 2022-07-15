@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type="text/css">
+		#MainLogo > a {
+			color:rgb(197, 59, 222);
+			font-weight: bold;
+			font-size: xx-large;
+		}
+		#MainLogo{
+			border-bottom: solid;
+			border-bottom-color: gray;
+			border-bottom-width: thin;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- start -->
+	
+	<div class="container">
+	  <div class="row align-items-start bg-info" style="height: 100px;">
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	  </div>
+	  <div class="row align-items-center bg-primary" style="height: 100px;">
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	  </div>
+	  <div class="row align-items-end bg-secondary" style="height: 100px;">
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	  </div>
+	</div>
+	<br>
+	<div class="container">
+	  <div class="row align-items-start bg-info" style="height: 200px;">
+	    <div class="col align-self-start">
+	      One of three columns
+	    </div>
+	    <div class="col align-self-center">
+	      One of three columns
+	    </div>
+	    <div class="col-8">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col align-self-end">
+	      One of three columns
+	    </div>
+	  </div>
+	  <div class="row align-items-center bg-primary" style="height: 200px;">
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	  </div>
+	  <div class="row align-items-end bg-secondary" style="height: 200px;">
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	    <div class="col">
+	      One of three columns
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="container">
+	  <div class="row justify-content-start">
+	    <div class="col-4 bg-danger">
+	      One of two columns
+	    </div>
+	    <div class="col-4 bg-info">
+	      One of two columns
+	    </div>
+	  </div>
+	  <div class="row justify-content-center">
+	    <div class="col-4 bg-secondary">
+	      One of two columns
+	    </div>
+	    <div class="col-4 bg-primary">
+	      One of two columns
+	    </div>
+	  </div>
+	  <div class="row justify-content-end">
+	    <div class="col-4 bg-success">
+	      One of two columns
+	    </div>
+	    <div class="col-4 bg-warning">
+	      One of two columns
+	    </div>
+	  </div>
+	  <div class="row justify-content-around">
+	    <div class="col-4 bg-primary">
+	      One of two columns
+	    </div>
+	    <div class="col-4 bg-danger">
+	      One of two columns
+	    </div>
+	  </div>
+	  <div class="row justify-content-between">
+	    <div class="col-4 bg-warning">
+	      One of two columns
+	    </div>
+	    <div class="col-4 bg-info">
+	      One of two columns
+	    </div>
+	  </div>
+	  <div class="row justify-content-evenly">
+	    <div class="col-1 bg-dark">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-primary">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-warning">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-secondary">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-info">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-primary">
+	      One of two columns
+	    </div>
+	   <!--  <div class="col-1 bg-dark">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-danger">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-info">
+	      One of two columns
+	    </div>
+	    <div class="col-1 bg-success">
+	      One of two columns
+	    </div> -->
+	  </div>
+	</div>
+	
+	<br><br><br><br>
+	
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-4 bg-info">.col-md-4</div>
+	    <div class="col-md-4 offset-md-4 bg-danger">.col-md-4 .offset-md-4</div>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-3 offset-md-3 bg-warning">.col-md-3 .offset-md-3</div>
+	    <div class="col-md-3 offset-md-3 bg-success">.col-md-3 .offset-md-3</div>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+	  </div>
+	</div>
+	
+	<br>
+	<hr>
+	<br>
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col col-sm-4 col-lg-1" style="background-color: #aba98a">
+				1 / 3
+			</div>
+			<div class="col-6 col-sm-2 col-lg-3" style="background-color: #50a98a">
+				2 / 3
+			</div>
+			<div class="col col-sm-4 col-lg-3" style="background-color: #ac368a">
+				3 / 3
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" style="background-color: #cca98a">
+				1 / 3
+			</div>
+			<div class="col" style="background-color: #dea98a">
+				2 / 3
+			</div>
+			<div class="col" style="background-color: #eda98a">
+				3 / 3
+			</div>
+		</div>
+	</div>	
+	
+	<div class="container-sm">
+		<nav class="navbar">
+			<div class="container-fluid" id="MainLogo">
+				<a class="navbar-brand" href=#>SimSim</a>
+			</div>
+		</nav>
+		<div>
+			<h2>sheet</h2>
+		</div>
+	</div>
+	<!-- end -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap의 경우 classs의 활용도가 매우 높은데 
+	class="Thumbnail text_content" {<- Thumbnail과 text_content 클래스 두개 모두 호출되는것.} 
+	" " 안에서 명칭 여러개가 (spacebar) 로 구분되는데 여러개의 클래스를 받아 들인다 -->
+</body>
+</html>
+
