@@ -4,10 +4,12 @@
 	<meta charset="uTF-8">
 	<meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
 	<title>Joseph(한찬구)</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
 	
 	<style type="text/css">
 		table,th,td{
-		text-align:center; /* 가운데정렬 */
+		text-align:center;  /* 가운데정렬 */
 		border:1px solid black;
 		border-collapse: collapse;
 		}
@@ -15,29 +17,28 @@
 		th,td{
 			padding:10px;
 		}
-	
 	</style>
 </head>
 
 <body>
-	<table>
+	<table id="foo-table" class="table table-bordered">
 		<thead>
 			<tr>
-				<td>회원번호</td>
-				<td width ="65px">성명</td>
-				<td width ="45px">성별</td>
-				<td>아이디</td>
-				<td width="65px">등급</td>
-				<td width ="180px">주소</td>
-				<td>이메일주소</td>
-				<td width="110px">휴대전화번호</td>
-				<td width="65px">게시글수</td>
-				<td width="50px">댓글수</td>
-				<td width="50px">경고수</td>
-				<td width="50px">누적경고수</td>
-				<td>가입일</td>
-				<td>최종접속일</td>
-				<td>광고성메일수신 동의여부</td>
+				<th>회원번호</th>
+				<th>성명</th>
+				<th>성별</th>
+				<th>아이디</th>
+				<th>등급</th>
+				<th>주소</th>
+				<th>이메일주소</th>
+				<th>휴대전화번호</th>
+				<th>게시글수</th>
+				<th>댓글수</th>
+				<th>경고수</th>
+				<th>누적경고수</th>
+				<th>가입일</th>
+				<th>최종접속일</th>
+				<th>광고성메일수신 동의여부</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -129,7 +130,7 @@
 		</tbody>
 	</table>
 	<br>
-	<table>
+	<!-- <table>
 		<tr>
 			<td width="100px"></td>
 			<td width="100px"></td>
@@ -139,7 +140,7 @@
 		<tr>
 			<td></td>
 			<td colspan="2">here</td>
-			<!-- <td></td> -->
+			<td></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -165,14 +166,19 @@
 		</tr>
 		<tr>
 			<td></td>
-			<!-- <td></td> -->
+			<td></td>
 			<td></td>
 			<td></td>
 		</tr>
-	</table>
-
-
-
+	</table> -->
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#foo-table").dataTable();
+		});
+	</script>
 </body>
 
 </html>
