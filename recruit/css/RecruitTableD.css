@@ -1,0 +1,17 @@
+table {
+	border:solid;
+	border-width:2px;
+	border-collapse: collapse;
+	width:900px;
+}
+th, td{
+	border:solid;
+	border-width:1px;
+}
+th{
+	background-color:#f5f5dc;
+}
+#IDPhoto{
+	color: red;
+	text-align: center;
+}

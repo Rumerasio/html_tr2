@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+	<!-- start -->
+	
+	<ul class="list-group">
+	  <li class="list-group-item">An item</li>
+	  <li class="list-group-item">A second item</li>
+	  <li class="list-group-item">A third item</li>
+	  <li class="list-group-item">A fourth item</li>
+	  <li class="list-group-item">And a fifth one</li>
+	</ul>
+	<br>
+	<ul class="list-group">
+	  <li class="list-group-item active" aria-current="true">An active item</li>
+	  <li class="list-group-item disabled">A second item</li>
+	  <li class="list-group-item">A third item</li>
+	  <li class="list-group-item">A fourth item</li>
+	  <li class="list-group-item">And a fifth one</li>
+	</ul>
+	<br>
+	<div class="list-group">
+	  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+	    The current link item
+	  </a>
+	  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+	  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+	  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+	  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+	</div><br>
+	
+	<div class="list-group">
+	  <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+	    The current button
+	  </button>
+	  <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+	  <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+	  <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+	  <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+	</div><br>
+	
+	<ul class="list-group list-group-flush">
+	  <li class="list-group-item">An item</li>
+	  <li class="list-group-item">A second item</li>
+	  <li class="list-group-item">A third item</li>
+	  <li class="list-group-item">A fourth item</li>
+	  <li class="list-group-item">And a fifth one</li>
+	</ul><br>
+	
+	<ol class="list-group list-group-numbered">
+	  <li class="list-group-item">A list item</li>
+	  <li class="list-group-item">A list item</li>
+	  <li class="list-group-item">A list item</li>
+	</ol>
+	
+	<hr><hr><hr>
+	
+	<ul class="list-group list-group-horizontal">
+	  <li class="list-group-item">A1</li>
+	  <li class="list-group-item">A2</li>
+	  <li class="list-group-item">A3</li>
+	</ul>
+	<ul class="list-group list-group-horizontal-sm">
+	  <li class="list-group-item">B1</li>
+	  <li class="list-group-item">B2</li>
+	  <li class="list-group-item">B3</li>
+	</ul>
+	<ul class="list-group list-group-horizontal-md">
+	  <li class="list-group-item">C1</li>
+	  <li class="list-group-item">C2</li>
+	  <li class="list-group-item">C3</li>
+	</ul>
+	<ul class="list-group list-group-horizontal-lg">
+	  <li class="list-group-item">D1</li>
+	  <li class="list-group-item">D2</li>
+	  <li class="list-group-item">D3</li>
+	</ul>
+	<ul class="list-group list-group-horizontal-xl">
+	  <li class="list-group-item list-group-item-secondary list-group-item-action">E1</li>
+	  <li class="list-group-item list-group-item-primary list-group-item-action">E2</li>
+	  <li class="list-group-item list-group-item-action">E3</li>
+	</ul>
+	<ul class="list-group list-group-horizontal-xxl">
+	  <li class="list-group-item list-group-item-danger">F1</li>
+	  <li class="list-group-item list-group-item-success">F2</li>
+	  <li class="list-group-item">F3</li>
+	</ul>
+	<br>
+	<ul class="list-group">
+	  <li class="list-group-item d-flex justify-content-between align-items-center">
+	    A list item
+	    <span class="badge bg-primary rounded-pill">14</span>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-between align-items-center">
+	    A second list item
+	    <span class="badge bg-primary rounded-pill">2</span>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-between align-items-center">
+	    A third list item
+	    <span class="badge bg-primary rounded-pill">1</span>
+	  </li>
+	</ul>
+	
+	<div class="list-group" style="width: 500px;">
+	  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+	    <div class="d-flex w-100 justify-content-between">
+	      <h5 class="mb-1">List group item heading</h5>
+	      <small>3 days ago</small>
+	    </div>
+	    <p class="mb-1">Some placeholder content in a paragraph.</p>
+	    <small>And some small print.</small>
+	  </a>
+	  <a href="#" class="list-group-item list-group-item-action">
+	    <div class="d-flex w-100 justify-content-between">
+	      <h5 class="mb-1">List group item heading</h5>
+	      <small class="text-muted">3 days ago</small>
+	    </div>
+	    <p class="mb-1">Some placeholder content in a paragraph.</p>
+	    <small class="text-muted">And some muted small print.</small>
+	  </a>
+	  <a href="#" class="list-group-item list-group-item-action">
+	    <div class="d-flex w-100 justify-content-between">
+	      <h5 class="mb-1">List group item heading</h5>
+	      <small class="text-muted">3 days ago</small>
+	    </div>
+	    <p class="mb-1">Some placeholder content in a paragraph.</p>
+	    <small class="text-muted">And some muted small print.</small>
+	  </a>
+	</div>
+	<!-- end -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap의 경우 classs의 활용도가 매우 높은데 
+	class="sumnail text_content" {<- Thumbnail과 text_content 클래스 두개 모두 호출되는것.} 
+	" " 안에서 명칭 여러개가 (spacebar) 로 구분되는데 여러개의 클래스를 받아 들인다 -->
+</body>
+</html>
+

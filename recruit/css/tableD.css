@@ -1,0 +1,36 @@
+body{
+	background-color: #f5f5dc20;
+}
+.AdressD{
+	width:200px;
+	height:21px;
+	white-space: nowrap; /* 줄 바꾸지않음 */
+	overflow: hidden; /* 내용이 넘치면 자르기 */
+	text-overflow: ellipsis;	/* ... */
+}
+table {
+	border:solid;
+	border-width:2px;
+	border-collapse: collapse;
+}
+tr:nth-child(2n+1) {
+	background-color:#e6f1ff;
+}
+tr:nth-child(2n) {
+	background-color:#f0f7ff;
+}
+th, td{
+	border:solid;
+	border-width:1px;
+}
+td {
+	text-align: center;
+}
+h1{
+	background-color: #0f52ba;
+	color: white;
+}
+#search{
+	width: 60px;
+	height: 30px;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
+	<title>Position_tr</title>
+	
+	<link href="../recruit/css/tableD.css" rel="stylesheet" type="text/css">
+	<link href="../recruit/css/Button.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	<style type="text/css">
+		#wrap{
+			width:100%;
+		}
+		li{
+			display: inline-block;
+			width: 170px;
+			padding-top:10px;
+		}
+		#Category ul:nth-child(2) li:nth-child(4) {
+			background-color:#dc143c30;
+		}
+		#GNB{
+			width:2000px; /* 창을 줄여도 컨텐츠가 파괴 되지 않게*/ 
+		}
+		#Category{
+			width:200px;
+			background-color:#edacb1;
+			padding-right:30px;
+			float: left;
+		}
+		#BonusZone{
+			float:right;
+			background-color:#8977ad; 
+			position: sticky;
+			top:0;
+		}
+		#Menu{
+			background-color: #f5f5dc20;			
+			white-space:nowrap;
+			overflow:hidden;
+		}
+		#End{
+			background-color:black;
+			color:white;
+			clear:both;
+			text-align: center;
+			padding-bottom: 60px;
+		}
+		#MenuTable{
+			border: solid;
+			border-collapse: collapse;
+		}
+		/* #MenuTable h3 {
+			color: white;
+		} */
+		th, tr, td{
+			border:solid;	
+			border-width: 1px;
+		}
+		td{
+			text-align: center;
+		}
+		/* sign_a 라는 a 링크  밑줄 없애고, 방문하지 않았을때, 방문했을대, 마우스를 올려두었을때, 클릭하고 땔때까지
+		모두 흰색으로 냅두기 위한 style */
+		
+		#sign_a:link {
+			color:white;
+		}
+		 #sign_a:visited{
+		 	color:white;
+		 }
+		 #sign_a, #sign_a:hover{
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<h1><div style="display: inline-block;" id="sign"><a href="./15_css_position_tr.html" id=sign_a>EZEN</a></div></h1>
+		<nav class="navbar bg-light">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">
+		      <img src="../../image/ezen_logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+		      EZEN       
+		    </a>
+		  </div>
+		</nav>
+		<div id="GNB">
+			<ul>
+				<li>쇼킹딜</li>
+				<li>베스트</li>
+				<li>쿠폰/기획전</li>
+				<li>장보기</li>
+				<li>T공식대리점</li>
+				<li>아마존</li>
+			</ul>
+		</div>
+		<div id="Category">
+			<ul>
+				<li>회원 관리</li>
+				<li>사이트 관리</li>
+				<li>시스템 관리</li>
+				<li>커뮤니케이션 관리</li>
+				<li>탬플릿 관리</li>
+				<li>로그 관리</li>
+				<li>통계</li>
+			</ul>
+			<ul>
+				<li>sdf</li>
+				<li>sadf</li>
+				<li>sdf</li>
+				<li>커뮤니케이션 관리</li>
+				<li>탬플릿 관리</li>
+				<li>로그 관리</li>
+				<li>통계</li>
+			</ul>
+		</div>
+		<div id="BonusZone" >
+			<h2>이거봐</h2>
+			<img alt="" src="../../image/leaves-3744649_1920.jpg" width="200px">
+			<h2>꼭봐</h2>
+		</div>
+		<div id="Menu">
+			<h4>
+				<!-- 
+				<select name="searchTag">
+					<option value="1">이름</option>
+					<option value="2">지원분야</option>
+					<option value="3">경력구분</option>
+				</select>
+				<input type="text" name="searchName" placeholder="검색어" style="height: 23px;">
+				<input type="button" id="search" value="조회"> 
+				--> 
+				<nav class="navbar navbar-expand-lg bg-light" >
+					<div class="container-fluid">
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="검색어" aria-label="Search" style="width:200px">
+							<button class="btn btn-outline-success" type="submit">조회</button>
+						</form>
+					</div>
+				</nav>
+			</h4>
+			
+			
+			<form>
+				<table>
+					<tr>
+						<th><input type="checkbox" name="DataChooseAll" id="DataChooseAll"></th>
+						<th>지원번호</th>
+						<th>이름</th>
+						<th>지원분야</th>
+						<th>경력구분</th>
+						<th>나이</th>
+						<th>전화번호</th>
+						<th>비상연락망</th>
+						<th>주소</th>
+						<th>결과</th>
+						<th>입사지원서삭제여부</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose1" id="DataChoose1"></td>
+						<td id="test">85556215</td>
+						<td><a href="./recruitView.html">김나노</td>
+						<td>회계</td>
+						<td>신입</td>
+						<td>26</td>
+						<td>010 9800 1260</td>
+						<td>010 3245 5600</td>
+						<td><div class ="AdressD">서울특별시 서초구 방배동 830-29</div></td>
+						<td>합격</td>
+						<td>N</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose2" id="DataChoose2"></td>
+						<td></td>
+						<td>배산수</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>	
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose3" id="DataChoose3"></td>
+						<td></td>
+						<td>골리앗</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose4" id="DataChoose4"></td>
+						<td></td>
+						<td>베토벤</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="DataChoose5" id="DataChoose5"></td>
+						<td></td>
+						<td>박현미</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				
+			<button type="button" class="btn btn-primary" name="new" onclick="apply();">작성하러가기</button>
+			<button type="button" class="btn btn-danger" name="delete" onclick="erase();">삭제</button>
+			
+			</form>
+		</div>
+		<div id="End"><h6>Copy right. 1439-Joseph Han</h6></div>
+	</div>
+	
+	<script type="text/javascript">
+		function apply() {
+			location.href="../recruit/recruitRegForm.html"
+		}
+		function erase() {
+			var result = confirm("정말 삭제하시겠습니까?")
+			if(result){
+				alert("삭제되었습니다.")
+			}
+		}
+		/* var CheckAll = document.getElementById("DataChooseAll");
+		CheckAll.addEventListener("change",CheckOn);
+		function CheckOn() {
+			document.getElementById("DataChoose1").value=on;
+			document.getElementById("DataChoose2").value=on;
+			document.getElementById("DataChoose3").value=on;
+			document.getElementById("DataChoose4").value=on;
+			document.getElementById("DataChoose5").value=on;
+		} */
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

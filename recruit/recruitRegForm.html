@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
+	<title>등록페이지</title>
+	
+	<link href="./css/RecruitTableD.css" rel="stylesheet" type="text/css">
+	<link href="./css/Input.css" rel="stylesheet" type="text/css">
+	
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<h1>입사지원서</h1>
+	
+	<form action="./recruitForm.html" id="form">
+		<button type="reset" id="refresh" style="position: relative; left: 844px; bottom: 2px;">초기화</button>
+		<table>
+			<th width="130px">지원분야</th>
+			<td><input type="text" class="TopInput" id="ApplyField"></td>
+			<th width="130px">경력구분<br>(신입/경력)</th>
+			<td><input type="text" class="TopInput"></td>
+			<th width="130px">희망연봉</th>
+			<td><input type="text" class="TopInput"></td>
+		</table>
+		
+		<h5>□기본정보</h5>
+		<table>
+			<tr>
+				<td rowspan ="6" width ="160px" id =IDPhoto>
+					<div> 
+						<p>
+							<i>
+								정장차림의 증명사진<br> 
+								넣으시면<br>
+								됩니다.
+							</i>
+						</p>
+						<input type="file" class="real-upload" accept="image/*" required multiple>
+						<div class="upload"></div>
+						<ul class="image-preview"></ul>
+					</div>
+				</td>
+				<th width="130px">성명</th>
+				<td><input></td>
+				<th width="130px">한문</th>
+				<td><input></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<th>영문</th>
+				<td><input class="BasicInput"></td>
+				<th>생년월일</th>
+				<td><input type="date" class="BasicInput"></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<th>전화번호</th>
+				<td id="CpFront">
+					<select>
+						<option value="02">02</option>
+						<option value="010" selected="selected">010</option>
+						<option value="011">011</option>
+					</select>-
+					<input type="text" class="CpInput">-
+					<input type="text" class="CpInput">				
+				</td>
+				<th>비상연락망</th>
+				<td id="EmFront">
+					<select>
+						<option value="02">02</option>
+						<option value="010" selected="selected">010</option>
+						<option value="011">011</option>
+					</select>-
+					<input type="text" class="EmInput">-
+					<input type="text" class="EmInput">				
+				</td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<th>이메일</th>
+				<td><input class="BasicInput"></td>
+				<th>나이</th>
+				<td><input class="BasicInput"></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<th>주소</th>
+				<td colspan="3"><input  class="BasicInput"></td>
+				<!-- <td></td>
+				<td></td> -->
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<th>취미생활</th>
+				<td colspan="3"><input  class="BasicInput" placeholder="선택사항"></td>
+				<!-- <td></td>
+				<td></td> -->
+			</tr>
+		</table>
+		
+		<h5>□학력사항 (최신이력이 가장 위로)</h5>
+		<table>
+			<tr>
+	          	<th width="180px">기간</th>
+				<th width="250px">출신학교</th>
+				<th width="100px">구분</th>
+				<th width="170px">[학과]</th>
+				<th width="100px">소재지</th>
+			</tr>
+			<tr>
+                <td><input class="AcademicInput" placeholder="2017.03 ~ 2021.02"></td>
+				<td><input class="AcademicInput" placeholder="ㅇㅇ대학교"></td>
+				<td><input class="AcademicInput" placeholder="졸업"></td>
+				<td><input class="AcademicInput" placeholder="ㅇㅇ과"></td>
+				<td><input class="AcademicInput" placeholder="서울"></td>
+			</tr>
+			<tr>
+				<td><input class="AcademicInput" placeholder="2014.03 ~ 2017.02"></td>
+				<td><input class="AcademicInput" placeholder="ㅇㅇ고등학교"></td>
+				<td><input class="AcademicInput" placeholder="졸업"></td>
+				<td><input class="AcademicInput" placeholder="-"></td>
+				<td><input class="AcademicInput" placeholder="서울"></td>
+			</tr>		
+		</table>
+			
+		<h5>□[교육연수]</h5>
+		<table>
+			<tr>
+				<th width="180px">연수기간</th>
+				<th width="180px">연수기관</th>
+				<th width="480px">연수과정 및 내용</th>
+			</tr>
+			<tr>
+              	<td><input class="EduTrainInput"></td>
+				<td><input class="EduTrainInput"></td>
+				<td><input class="EduTrainInput"></td>
+			</tr>
+			<tr>
+              	<td><input class="EduTrainInput"></td>
+				<td><input class="EduTrainInput"></td>
+				<td><input class="EduTrainInput"></td>
+			</tr>
+			<tr>
+              	<td><input class="EduTrainInput"></td>
+				<td><input class="EduTrainInput"></td>
+				<td><input class="EduTrainInput"></td>
+			</tr>		
+		</table>
+		
+		<h5>□[자격사항]</h5>
+		<table>
+			<tr>
+				<th width="180px">취득일</th>
+				<th width="170px">종류 및 등급</th>
+				<th width="140px">발행처</th>
+				<th width="320px">보유기술 및 수준</th>
+			</tr>
+			<tr>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+			</tr>
+			<tr>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+			</tr>
+			<tr>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+				<td><input class="LicenseInput"></td>
+			</tr>		
+		</table>
+			
+		<h5>□경력사항(4대 보험 가입 경력)</h5>
+		<table>
+			<tr>
+				<th width="180px">활동기간</th>
+				<th width="120px">기관</th>
+				<th width="120px">담당업무</th>
+				<th width="400px">경험 및 습득역량</th>
+			</tr>
+			<tr>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+			</tr>
+			<tr>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+			</tr>
+			<tr>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+				<td><input class="CareerInput"></td>
+			</tr>	
+		</table>
+		<br><input type="button" value="뒤로가기" onclick="back()">
+		<input type="button" value="작성하기" onclick="save()">
+	</form>	
+	
+	<script type="text/javascript">
+		function back() {
+			var result = confirm("뒤로가시겠습니까?");
+			if(result){
+				history.back();	
+			}
+			else{}
+		}
+		function save() {
+			var result = confirm("작성하시겠습니까?")
+			if(result) {
+				location.href="./recruitView.html";
+			}
+			else{}		
+		}
+		
+		var reBtn = document.getElementById("refresh");
+		reBtn.addEventListener("click",erase)
+		function erase() {
+			document.getElementById("ApplyField").innerHTML ="";
+		}
+		/* function getImageFiles(e) {
+			const uploadFiles = [];
+			const files = e.currentTarget.files;
+			const imagePreview = document.querySelector('.image-preview');
+			const docFrag = new DocumentFragment();
+		// 파일 타입 검사
+		[...files].forEach(file => {
+			if (!file.type.match("image/.*")) {
+				alert('이미지 파일만 업로드가 가능합니다.');
+				return
+		}
+		
+		function createElement(e, file) {
+			const li = document.createElement('li');
+			const img = document.createElement('img');
+			img.setAttribute('src', e.target.result);
+			img.setAttribute('data-file', file.name);
+			li.appendChild(img);
+			
+			return li;
+		}	
+		const realUpload = document.querySelector('.real-upload');
+		const upload = document.querySelector('.upload');
+		
+		upload.addEventListener('click',() => realUpload.click());
+		
+	    realUpload.addEventListener('change', getImageFiles); */
+	</script>
+	<script>
+    function getImageFiles(e) {
+      const uploadFiles = [];
+      const files = e.currentTarget.files;
+      const imagePreview = document.querySelector('.image-preview');
+      const docFrag = new DocumentFragment();
+
+      if ([...files].length >= 2) {
+        alert('이미지는 최대 6개 까지 업로드가 가능합니다.');
+        return;
+      }
+
+      // 파일 타입 검사
+      [...files].forEach(file => {
+        if (!file.type.match("image/.*")) {
+          alert('이미지 파일만 업로드가 가능합니다.');
+          return
+        }
+
+        // 파일 갯수 검사
+        if ([...files].length < 2) {
+          uploadFiles.push(file);
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            const preview = createElement(e, file);
+            imagePreview.appendChild(preview);
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    }
+
+    function createElement(e, file) {
+      const li = document.createElement('li');
+      const img = document.createElement('img');
+      img.setAttribute('src', e.target.result);
+      img.setAttribute('data-file', file.name);
+      li.appendChild(img);
+
+      return li;
+    }
+
+    const realUpload = document.querySelector('.real-upload');
+    const upload = document.querySelector('.upload');
+
+    upload.addEventListener('click', () => realUpload.click());
+
+    realUpload.addEventListener('change', getImageFiles);
+  </script>
+</body>	
+</body>
+</html>

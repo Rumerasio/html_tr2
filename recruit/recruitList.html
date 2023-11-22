@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
+	<title>관리자화면</title>
+	
+	<link href="./css/tableD.css" rel="stylesheet" type="text/css">
+	<link href="./css/Button.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	<h1>EZEN</h1>
+	<!-- <hr> -->
+	<h4>
+		<select name="searchTag">
+			<option value="1">이름</option>
+			<option value="2">지원분야</option>
+			<option value="3">경력구분</option>
+		</select>
+		<input type="text" name="searchName" placeholder="검색어" style="height: 23px;">
+		<input type="button" id="search" value="조회">
+	</h4>
+	
+	
+	<form>
+		<table>
+			<tr>
+				<th>선택<br><input type="checkbox" name="DataChooseAll" id="DataChooseAll"></th>
+				<th>지원번호</th>
+				<th>이름</th>
+				<th>지원분야</th>
+				<th>경력구분</th>
+				<th>나이</th>
+				<th>전화번호</th>
+				<th>비상연락망</th>
+				<th>주소</th>
+				<th>결과</th>
+				<th>입사지원서삭제여부</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="DataChoose1" id="DataChoose1"></td>
+				<td id="test">85556215</td>
+				<td><a href="./recruitView.html">김나노</td>
+				<td>회계</td>
+				<td>신입</td>
+				<td>26</td>
+				<td>010 9800 1260</td>
+				<td>010 3245 5600</td>
+				<td><div class ="AdressD">서울특별시 서초구 방배동 830-29</div></td>
+				<td>합격</td>
+				<td>N</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="DataChoose2" id="DataChoose2"></td>
+				<td></td>
+				<td>배산수</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>	
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="DataChoose3" id="DataChoose3"></td>
+				<td></td>
+				<td>골리앗</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="DataChoose4" id="DataChoose4"></td>
+				<td></td>
+				<td>베토벤</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="DataChoose5" id="DataChoose5"></td>
+				<td></td>
+				<td>박현미</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+	<input type="button" name=new id=newBtn value="작성하러가기" onclick="apply();">
+	<input type="button" name=delete value="삭제" onclick="erase();">
+	
+	</form>
+	
+	<script type="text/javascript">
+		function apply() {
+			location.href="./recruitRegForm.html"
+		}
+		function erase() {
+			var result = confirm("정말 삭제하시겠습니까?")
+			if(result){
+				alert("삭제되었습니다.")
+			}
+		}
+		/* var CheckAll = document.getElementById("DataChooseAll");
+		CheckAll.addEventListener("change",CheckOn);
+		function CheckOn() {
+			document.getElementById("DataChoose1").value=on;
+			document.getElementById("DataChoose2").value=on;
+			document.getElementById("DataChoose3").value=on;
+			document.getElementById("DataChoose4").value=on;
+			document.getElementById("DataChoose5").value=on;
+		} */
+	</script>
+	
+</body>
+</html>
