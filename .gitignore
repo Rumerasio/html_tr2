@@ -23,3 +23,5 @@ bin-release/
 .settings/
 .git/
 .project
+/project2/
+/project/
